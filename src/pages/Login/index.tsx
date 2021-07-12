@@ -8,7 +8,7 @@ import history from "utils/history"
 import useAuth from "hooks/useAuth"
 import useRequestState from "hooks/useRequestState"
 
-import { Button, Heading } from "@commitUI/index"
+import { Button, Heading, Alert } from "@commitUI/index"
 import { Input } from "components/Form"
 import Navbar from "components/Navbar"
 import LinkButton from "components/LinkButton"
@@ -50,9 +50,14 @@ const Login = () => {
       formikHelpers.setSubmitting(false)
       history.push("/")
     } catch (e) {
-      state.setError(e)
+      state.setError(
+        "The username and password you entered did not match our records. Please try again."
+      )
       // To-do: Make an alert card like on twitter to display the error message
-      formikHelpers.setFieldError("password", "Wrong username or password.")
+      // formikHelpers.setFieldError(
+      //   "password",
+      //   "The username and password you entered did not match our records. Please try again."
+      // )
       console.log(e)
     }
     state.end()
@@ -80,6 +85,14 @@ const Login = () => {
           onSubmit={handleLogin}
         >
           <Form>
+            {Boolean(state.error) && (
+              <Alert
+                status="error"
+                message={state.error || ""}
+                className={styles.error}
+              />
+            )}
+
             <Input name="nusnet" label="NUSNET ID" className={styles.input} />
 
             <Input

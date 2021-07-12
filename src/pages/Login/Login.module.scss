@@ -6,7 +6,7 @@
 
 .heading {
   margin-top: var(--spacing-lg);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-base);
 }
 
 .imgContainer {
@@ -75,4 +75,8 @@
 
 .btn {
   margin-top: var(--spacing-base);
+}
+
+.error {
+  margin-bottom: var(--spacing-sm);
 }

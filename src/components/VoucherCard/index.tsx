@@ -57,21 +57,37 @@ export const VoucherCardSkeleton = () => {
   return (
     <Card className={styles.container}>
       <div style={{ width: "100%" }}>
-        <Skeleton height="200px" />
+        <Skeleton height="200px" startColor="gray.400" endColor="gray.400" />
       </div>
 
       <div className={styles.textContainer}>
         <Skeleton
           width="180px"
           height="26px"
+          startColor="gray.400"
+          endColor="gray.400"
           className={styles.headingSkeleton}
         />
 
         <div className={styles.descriptionSkeletion}>
-          <SkeletonText mt="2" noOfLines={2} spacing="3" width="280px" />
+          <SkeletonText
+            startColor="gray.400"
+            endColor="gray.400"
+            mt="2"
+            noOfLines={2}
+            spacing="3"
+            width="280px"
+          />
         </div>
 
-        <SkeletonText mt="2" noOfLines={1} width="200px" height="16px" />
+        <SkeletonText
+          startColor="gray.400"
+          endColor="gray.400"
+          mt="2"
+          noOfLines={1}
+          width="200px"
+          height="16px"
+        />
       </div>
     </Card>
   )

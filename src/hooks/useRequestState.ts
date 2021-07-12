@@ -14,7 +14,6 @@ const useRequestState = (): RequestState => {
 
   const start = useCallback(() => {
     setLoading(true)
-    setErrorState(undefined)
   }, [])
 
   const end = useCallback(() => {
