@@ -63,21 +63,15 @@ export const VoucherCardSkeleton = () => {
       <div className={styles.textContainer}>
         <Skeleton
           width="180px"
-          height="30px"
+          height="26px"
           className={styles.headingSkeleton}
         />
 
         <div className={styles.descriptionSkeletion}>
-          <SkeletonText mt="2" noOfLines={3} spacing="3" width="200px" />
+          <SkeletonText mt="2" noOfLines={2} spacing="3" width="280px" />
         </div>
 
-        <SkeletonText
-          mt="2"
-          noOfLines={1}
-          spacing="2"
-          width="200px"
-          height="16px"
-        />
+        <SkeletonText mt="2" noOfLines={1} width="200px" height="16px" />
       </div>
     </Card>
   )

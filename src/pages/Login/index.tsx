@@ -6,6 +6,7 @@ import { Routes } from "constants/routes"
 import { login } from "api/auth"
 import history from "utils/history"
 import useAuth from "hooks/useAuth"
+import useRequestState from "hooks/useRequestState"
 
 import { Button, Heading } from "@commitUI/index"
 import { Input } from "components/Form"
@@ -13,8 +14,8 @@ import Navbar from "components/Navbar"
 import LinkButton from "components/LinkButton"
 
 import styles from "./Login.module.css"
-// import logo from "../../assets/images/logo.png";
-// import logo2 from "assets/images/logo2.jpeg";
+import logo from "assets/images/logo.png"
+import logo2 from "assets/images/logo2.jpeg"
 
 interface Values {
   nusnet: string
@@ -22,6 +23,7 @@ interface Values {
 }
 
 const Login = () => {
+  const state = useRequestState()
   const initialValues: Values = {
     nusnet: "",
     password: "",
@@ -39,6 +41,7 @@ const Login = () => {
     formikHelpers: FormikHelpers<Values>
   ) => {
     try {
+      state.start()
       const { data: token } = await login({
         username: values.nusnet,
         password: values.password,
@@ -47,10 +50,12 @@ const Login = () => {
       formikHelpers.setSubmitting(false)
       history.push("/")
     } catch (e) {
+      state.setError(e)
       // To-do: Make an alert card like on twitter to display the error message
       formikHelpers.setFieldError("password", "Wrong username or password.")
       console.log(e)
     }
+    state.end()
   }
 
   return (
@@ -58,8 +63,12 @@ const Login = () => {
       <Navbar />
       <div className={styles.container}>
         <div className={styles.imgContainer}>
-          {/* <img src={logo2} alt="logo" height={10} />
-                    <img src={logo} alt="logo" height={10} /> */}
+          <img
+            src={logo2}
+            alt="nussu welfare logo"
+            className={styles.welfare}
+          />
+          <img src={logo} alt="nussu commIT logo" className={styles.commit} />
         </div>
 
         <Heading level={1} className={styles.heading}>
@@ -82,8 +91,9 @@ const Login = () => {
 
             <Button
               className={styles.btn}
-              isSubmit
               // Click handler is handled by the onSubmit props in the parent Formik component
+              isSubmit
+              isLoading={state.loading}
             >
               Log In
             </Button>
@@ -96,9 +106,11 @@ const Login = () => {
                     <Button type="text" className={styles.btnRight}>
                         Sign Up
                     </Button> */}
+
           <Heading level={4} className={styles.or}>
             <span>or</span>
           </Heading>
+
           <LinkButton
             to={Routes.register}
             type="outlined"
