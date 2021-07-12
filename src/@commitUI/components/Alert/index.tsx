@@ -6,6 +6,9 @@ import {
   AlertProps as ChakraAlertProps,
   CloseButton,
 } from "@chakra-ui/react"
+
+import { Text } from "@commitUI/index"
+
 import cx from "classnames"
 
 import styles from "./Alert.module.css"
@@ -35,7 +38,7 @@ export const Alert = ({
       className={cn}
     >
       {hasIcon && <AlertIcon marginTop={0.5} />}
-      <AlertDescription>{message}</AlertDescription>
+      <Text>{message}</Text>
       {canClose && <CloseButton position="absolute" right="8px" top="8px" />}
     </ChakraAlert>
   )

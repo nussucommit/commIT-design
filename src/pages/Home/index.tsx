@@ -49,7 +49,7 @@ const Home = () => {
               ))
             : arr.map(() => <VoucherCardSkeleton />)}
         </div>
-        <Button onClick={onOpen}>Open Modal</Button>
+
         <Button
           onClick={() => {
             const token = getToken()

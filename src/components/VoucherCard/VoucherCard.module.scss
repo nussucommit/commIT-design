@@ -11,6 +11,15 @@
   // 0 15px 40px rgba(166,173,201,0.2);
 }
 
+.imgContainer {
+  width: 100%;
+}
+
+.imgContainer .imgSkeleton {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
 .img {
   height: 200px;
   border-top-left-radius: 8px;

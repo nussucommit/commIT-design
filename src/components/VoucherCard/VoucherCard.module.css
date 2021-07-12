@@ -8,6 +8,15 @@
           box-shadow: 0 16px 30px -8px rgba(112, 144, 176, 0.3);
 }
 
+.imgContainer {
+  width: 100%;
+}
+
+.imgContainer .imgSkeleton {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
 .img {
   height: 200px;
   border-top-left-radius: 8px;

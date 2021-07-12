@@ -28,7 +28,7 @@ const VoucherCard = ({
   ) : (
     <Card className={styles.container} onClick={onClick}>
       <>
-        <div style={{ width: "100%" }}>
+        <div className={styles.imgContainer}>
           <img
             src={voucher && voucher.image}
             className={styles.img}
@@ -56,8 +56,13 @@ const VoucherCard = ({
 export const VoucherCardSkeleton = () => {
   return (
     <Card className={styles.container}>
-      <div style={{ width: "100%" }}>
-        <Skeleton height="200px" startColor="gray.400" endColor="gray.400" />
+      <div className={styles.imgContainer}>
+        <Skeleton
+          height="200px"
+          startColor="gray.400"
+          endColor="gray.400"
+          className={styles.imgSkeleton}
+        />
       </div>
 
       <div className={styles.textContainer}>
