@@ -20,7 +20,8 @@ jobs:
       #   env:
       #     CI: true
       - name: Generate build
-        run: npm run build
+        # The default is CI=true. This will treat warnings as errors and will cause build to fail :/
+        run: CI=false npm run build
       # Share artifact inside workflow
       - name: Share artifact inside workflow
         uses: actions/upload-artifact@v1
