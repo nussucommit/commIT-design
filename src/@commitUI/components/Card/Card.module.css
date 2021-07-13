@@ -4,5 +4,6 @@
   border-radius: var(--border-radius);
   margin: 0 var(--spacing-xs);
   padding: var(--spacing-xs) var(--spacing-base);
+  border: var(--border-solid-light);
 }
 /*# sourceMappingURL=Card.module.css.map */

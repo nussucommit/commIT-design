@@ -1,3 +1,7 @@
+import React from "react"
+import { addDecorator } from "@storybook/react"
+import { ChakraProvider, CSSReset } from "@chakra-ui/react"
+
 import "../src/@commitUI/assets/css/index.css"
 
 export const parameters = {
@@ -9,3 +13,5 @@ export const parameters = {
     },
   },
 }
+
+addDecorator((storyFn) => <ChakraProvider>{storyFn()}</ChakraProvider>)
