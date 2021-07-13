@@ -25,6 +25,7 @@
           filter: brightness(100%);
   -ms-touch-action: manipulation;
       touch-action: manipulation;
+  line-height: normal;
 }
 
 .button:hover {
