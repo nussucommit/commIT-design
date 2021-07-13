@@ -50,7 +50,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "tsc": "tsc",
-    "postinstall": "npm run tsc"
+    "postinstall": "npm run tsc",
+    "chromatic": "npx chromatic"
   },
   "eslintConfig": {
     "extends": [
@@ -92,6 +93,7 @@
     "@types/react-scroll": "^1.8.2",
     "@types/react-select": "^4.0.15",
     "babel-plugin-module-resolver": "^4.1.0",
+    "chromatic": "^5.9.2",
     "webpack": "4.44.2",
     "webpack-cli": "^4.7.2"
   }
