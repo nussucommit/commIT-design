@@ -35,7 +35,7 @@
     "tsc": "tsc",
     "postinstall": "npm run tsc",
     "chromatic": "npx chromatic",
-    "release": "auto shipit --base-branch=main"
+    "release": "auto shipit --base-branch=master"
   },
   "babel": {
     "presets": [
