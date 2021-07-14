@@ -29,7 +29,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +67,8 @@
     "@storybook/node-logger": "^6.3.4",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.4",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/react-scroll": "^1.8.3",
     "@types/react-select": "^4.0.17",
     "chromatic": "^5.9.2"
   }
