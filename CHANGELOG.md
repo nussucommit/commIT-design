@@ -1,3 +1,15 @@
+# v0.1.3 (Wed Jul 14 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Fix build script, tsconfig, and entry point ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### Authors: 1
+
+- Kevin Mingtarja ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+---
+
 # v0.1.2 (Wed Jul 14 2021)
 
 #### ⚠️ Pushed to `master`
