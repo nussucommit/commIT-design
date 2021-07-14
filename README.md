@@ -6,7 +6,7 @@ A React components library made by NUSSU commIT
 
 In the project directory, you can run:
 
-### `npm i commit-design`
+`npm i commit-design`
 
 ## Usage
 
