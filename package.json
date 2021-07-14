@@ -34,7 +34,8 @@
     "build-storybook": "build-storybook -s public",
     "tsc": "tsc",
     "postinstall": "npm run tsc",
-    "chromatic": "npx chromatic"
+    "chromatic": "npx chromatic",
+    "release": "auto shipit --base-branch=main"
   },
   "babel": {
     "presets": [
