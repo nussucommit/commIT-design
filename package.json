@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "build": "rm -rf dist && NODE_ENV=production babel src/commit-ui --out-dir dist --copy-files && tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -88,7 +88,7 @@
     "chromatic": "^5.9.2"
   },
   "description": "A React components library made by NUSSU commIT's 30th Technical MC",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nussucommit/commIT-ui.git"
