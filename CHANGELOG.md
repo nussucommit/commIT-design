@@ -1,3 +1,16 @@
+# v0.1.2 (Wed Jul 14 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/nussucommit/commIT-ui ([@kevinmingtarja](https://github.com/kevinmingtarja))
+- Change entry point ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### Authors: 1
+
+- Kevin Mingtarja ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+---
+
 # v0.1.1 (Wed Jul 14 2021)
 
 #### ⚠️ Pushed to `master`
