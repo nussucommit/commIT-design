@@ -9,6 +9,8 @@ jobs:
   chromatic-deployment:
     # Operating System
     runs-on: ubuntu-latest
+    # This check needs to be in place to prevent a publish loop with auto and github actions
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     # Job steps
     steps:
       - uses: actions/checkout@v1
