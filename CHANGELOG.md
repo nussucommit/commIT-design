@@ -1,3 +1,16 @@
+# v0.1.4 (Thu Aug 26 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/nussucommit/commIT-ui ([@kevinmingtarja](https://github.com/kevinmingtarja))
+- Set padding to 0 ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### Authors: 1
+
+- Kevin Mingtarja ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+---
+
 # v0.1.3 (Wed Jul 14 2021)
 
 #### ⚠️ Pushed to `master`
