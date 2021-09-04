@@ -1,3 +1,15 @@
+# v0.1.10 (Sat Sep 04 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Delete unnecessary files ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### Authors: 1
+
+- Kevin Mingtarja ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+---
+
 # v0.1.9 (Sat Sep 04 2021)
 
 #### ⚠️ Pushed to `master`
