@@ -1,3 +1,15 @@
+# v0.1.7 (Sat Sep 04 2021)
+
+#### 🐛 Bug Fix
+
+- Create TextArea component [#6](https://github.com/nussucommit/commIT-design/pull/6) ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### Authors: 1
+
+- Kevin Mingtarja ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+---
+
 # v0.1.5 (Sat Sep 04 2021)
 
 #### 🐛 Bug Fix
