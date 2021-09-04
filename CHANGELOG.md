@@ -1,3 +1,19 @@
+# v0.1.5 (Sat Sep 04 2021)
+
+#### 🐛 Bug Fix
+
+- Revert button padding [#1](https://github.com/nussucommit/commIT-design/pull/1) ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### ⚠️ Pushed to `master`
+
+- Fix button padding ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### Authors: 1
+
+- Kevin Mingtarja ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+---
+
 # v0.1.4 (Thu Aug 26 2021)
 
 #### ⚠️ Pushed to `master`
