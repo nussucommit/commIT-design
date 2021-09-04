@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ElementRef } from "react"
 import ReactSelect, { components, Props } from "react-select"
 import cx from "classnames"
 
@@ -7,7 +7,7 @@ import { Text } from "../Text"
 import styles from "./Select.module.css"
 
 export interface SelectProps extends Omit<Props, "components" | "placeholder"> {
-  label: string
+  label?: string
   id?: string
   error?: string
   limitPick?: number
@@ -25,11 +25,12 @@ export const Select = ({
   limitPick = 9999,
   ...props
 }: SelectProps) => {
-  const currLength = value.length || 0
+  const currLength = value?.length || 0
 
   return (
     <ReactSelect
       {...props}
+      value={value}
       blurInputOnSelect
       onChange={onChange}
       onBlur={onBlur}
@@ -71,7 +72,7 @@ export const Select = ({
         }),
         singleValue: (provided) => ({
           ...provided,
-          paddingTop: 18,
+          paddingTop: label ? 18 : 0,
           fontSize: 16,
         }),
         input: (provided) => ({
@@ -85,10 +86,11 @@ export const Select = ({
 }
 
 const Control = (props: any): JSX.Element => {
-  const error =
-    JSON.stringify(props.error).charAt(0) === '"'
+  const error = props.error
+    ? JSON.stringify(props.error).charAt(0) === '"'
       ? props.error
       : JSON.stringify(props.error).slice(10, -2)
+    : ""
 
   return (
     <div>

@@ -3,6 +3,7 @@
   "version": "0.1.8",
   "dependencies": {
     "@babel/cli": "^7.14.5",
+    "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "^1.6.5",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
@@ -19,10 +20,12 @@
     "framer-motion": "^4.1.17",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-dropzone": "^11.3.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "react-select": "^4.3.1",
+    "react-table": "^7.7.0",
     "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
   },
@@ -86,6 +89,7 @@
     "@types/react-router-dom": "^5.1.8",
     "@types/react-scroll": "^1.8.3",
     "@types/react-select": "^4.0.17",
+    "@types/react-table": "^7.7.2",
     "chromatic": "^5.9.2"
   },
   "description": "A React components library made by NUSSU commIT's 30th Technical MC",

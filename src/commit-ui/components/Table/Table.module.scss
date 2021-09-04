@@ -1,0 +1,33 @@
+td {
+  max-width: 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--spacing-base) var(--spacing-xl);
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .select {
+      width: 90px;
+      margin-left: var(--spacing-xs);
+    }
+  }
+
+  .middle {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.text {
+  margin-right: var(--spacing-sm);
+}
+
+.icon {
+  margin-left: var(--spacing-3xs);
+}

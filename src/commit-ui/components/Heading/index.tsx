@@ -9,7 +9,7 @@ export type Props = {
   centered?: boolean
   children?: React.ReactNode
   className?: string
-  level?: 1 | 2 | 3 | 4
+  level?: 1 | 2 | 3 | 4 | 5 | 6
   noLeading?: boolean
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl"
   color?: ColorName
@@ -30,12 +30,12 @@ export const Heading = (props: Props) => {
     {
       [styles.centered]: centered,
       [styles.noLeading]: noLeading,
-      [styles.xs]: size === "xs",
-      [styles.sm]: size === "sm" || level === 4,
-      [styles.md]: size === "md" || level === 2,
-      [styles.lg]: size === "lg",
-      [styles.xl]: size === "xl" || level === 1,
-      [styles["2xl"]]: size === "2xl",
+      [styles.xs]: size === "xs" || level === 6,
+      [styles.sm]: size === "sm" || level === 5,
+      [styles.md]: size === "md" || level === 4,
+      [styles.lg]: size === "lg" || level === 3,
+      [styles.xl]: size === "xl" || level === 2,
+      [styles["2xl"]]: size === "2xl" || level === 1,
     },
     className
   )
