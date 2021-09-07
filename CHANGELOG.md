@@ -1,3 +1,15 @@
+# v0.1.12 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Add Search component ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### Authors: 1
+
+- Kevin Mingtarja ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+---
+
 # v0.1.11 (Sat Sep 04 2021)
 
 #### ⚠️ Pushed to `master`
