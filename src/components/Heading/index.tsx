@@ -1,5 +1,5 @@
 import React from "react"
-import cs from "classnames"
+import cx from "classnames"
 
 import { Color, ColorName } from "../../constants/theme"
 
@@ -25,7 +25,7 @@ export const Heading = (props: Props) => {
     color,
     size,
   } = props
-  const cn = cs(
+  const cn = cx(
     styles.heading,
     {
       [styles.centered]: centered,

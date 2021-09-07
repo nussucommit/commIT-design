@@ -2,8 +2,6 @@ import React, { ButtonHTMLAttributes } from "react"
 import { Spinner } from "@chakra-ui/react"
 import cx from "classnames"
 
-import { Text } from "../Text"
-
 import styles from "./Button.module.css"
 
 export interface Props
