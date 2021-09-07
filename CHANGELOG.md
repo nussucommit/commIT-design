@@ -1,3 +1,18 @@
+# v0.1.13 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/nussucommit/commIT-ui ([@kevinmingtarja](https://github.com/kevinmingtarja))
+- Add stories for input, enable documentation for extended props in storybook ([@kevinmingtarja](https://github.com/kevinmingtarja))
+- Add stories for TextArea ([@kevinmingtarja](https://github.com/kevinmingtarja))
+- Add story for Search ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+#### Authors: 1
+
+- Kevin Mingtarja ([@kevinmingtarja](https://github.com/kevinmingtarja))
+
+---
+
 # v0.1.12 (Tue Sep 07 2021)
 
 #### ⚠️ Pushed to `master`
