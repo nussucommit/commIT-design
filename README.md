@@ -1,6 +1,6 @@
 # commIT Design
 
-A React components library made by NUSSU commIT
+A React components library made by NUSSU commIT. More in-depth documentation can be found [here](https://quaint-iguanodon-3c6.notion.site/commIT-design-4dd148198bee4faaa6afe6952ae2faaa).
 
 ## Installation
 
