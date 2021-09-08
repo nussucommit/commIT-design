@@ -33,7 +33,7 @@ Steps to creating a Pull Request:
 
 1. Commit and push your new changes into your branch
 2. Head over to the Pull requests section on our repo, click New pull request
-3. Pick your branch, and compare with the branch that you are having changes in
+3. Pick your branch that you made changes in
 4. Put a clear title and description in your pull request. Make sure the
    description follows our guide below
 5. Pick Create pull request and hit the green button
