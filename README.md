@@ -20,7 +20,7 @@ To use the components, simply
 
 ## Getting Started 🔧
 
-To get started running the project locally, please follow the steps below.
+To get started running the project locally, please follow the steps below. And before contributing, please read our [contributing guidelines](CONTRIBUTING.md).
 
 First, clone the repository.
 
